@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Vass\RegisterCustomer\Logger\Custom" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers"  xsi:type="array">
+                <item name="debug" xsi:type="object">Vass\RegisterCustomer\Logger\Handler\CustomLog</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Vass\RegisterCustomer\Helper\SaveCustomerToLog">
+        <arguments>
+            <argument name="logger" xsi:type="object">Vass\RegisterCustomer\Logger\Custom</argument>
+        </arguments>
+    </type>
+</config>

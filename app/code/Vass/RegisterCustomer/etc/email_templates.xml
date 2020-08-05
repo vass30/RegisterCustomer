@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="email_to_support" label="Email Template to Support" file="email_to_support.html" type="html" module="Vass_RegisterCustomer" area="frontend"/>
+</config>
